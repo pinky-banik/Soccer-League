@@ -45,21 +45,121 @@
 <body class="bg-secondary text-white">
     <!-- header section -->
 
-    <div class="hero h-fit bg-primary" style="background-image: url(Images/bg.png);">
+    <div class="hero h-fit bg-primary" style="background-image: url(Images/Final_cover.png);">
         <div class=""></div>
         <div class="hero-content text-center text-neutral-content">
           <div class="max-w-md py-28">
-            <h1 class="mb-5 text-5xl font-bold">Soccer League</h1>
+            <h1 class="mb-5 text-5xl font-bold text-orange-600">Soccer League</h1>
             <p class="mb-5">The United Soccer League (USL) is the largest and fastest-growing professional soccer organization in North America.</p>
           </div>
         </div>
       </div>
     
-    
+    <!-- Main Section Starts Here -->
+    <main class="w-11/12 lg:w-10/12 mx-auto">
+
+        <!-- Course Section -->
+        <section class=" pt-14">
+            <div class=" sm:flex  block ">
+                
+                <!-- Player Card Container -->
+                <div class="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-10 my-5 lg:w-75 mx-auto">
+                    <div  class="card   w-72 card-compact bg-base-100 shadow-xl rounded">
+                        <img  class="w-72 h-72 object-cover" src="Images/images.jpg" alt="Shoes" />
+                        <div class="card-body bg-primary">
+                        <h2 class="name text-2xl text-white text-center">Lionel Messi</h2>
+                        <p class="mx-auto"><span class="mx-3">36 Goals</span> . <span class="mx-3">120 Assist</span></p>
+                        <button class="select-button py-4 btn rounded-none bg-blue-900 focus:bg-blue-800 hover:bg-blue-800 ">Select</button>
+                        </div>
+                    </div>   
+                    <div  class="card   w-72 card-compact bg-base-100 shadow-xl rounded">
+                        <img  class="w-72 h-72 object-cover" src="Images/Cristiano_Ronaldo_2018.jpg"
+                         alt="Shoes" />
+                        <div class="card-body bg-primary">
+                        <h2 class="name text-2xl text-white text-center">Cristiano Ronaldo</h2>
+                        <p class="mx-auto"><span class="mx-3">36 Goals</span> . <span class="mx-3">120 Assist</span></p>
+                        <button class="select-button py-4 btn rounded-none bg-blue-900 focus:bg-blue-800 hover:bg-blue-800">Select</button>
+                        </div>
+                    </div>   
+                    <div  class="card   w-72 card-compact bg-base-100 shadow-xl rounded">
+                        <img  class="w-72 h-72 object-cover" src="Images/Harry Kane.jpg" alt="Shoes" />
+                        <div class="card-body bg-primary">
+                        <h2 class="name text-2xl text-white text-center">Harry Cane</h2>
+                        <p class="mx-auto"><span class="mx-3">36 Goals</span> . <span class="mx-3">120 Assist</span></p>
+                        <button class="select-button py-4 btn rounded-none bg-blue-900 focus:bg-blue-800 hover:bg-blue-800">Select</button>
+                        </div>
+                    </div>   
+                    <div  class="card   w-72 card-compact bg-base-100 shadow-xl rounded">
+                        <img  class="w-72 h-72 object-cover" src="Images/Mohammad Salah.jpg" alt="Shoes" />
+                        <div class="card-body bg-primary">
+                        <h2 class="name text-2xl text-white text-center">Mohammad Salah</h2>
+                        <p class="mx-auto"><span class="mx-3">36 Goals</span> . <span class="mx-3">120 Assist</span></p>
+                        <button class="select-button py-4 btn rounded-none bg-blue-900 focus:bg-blue-800 hover:bg-blue-800">Select</button>
+                        </div>
+                    </div>   
+                    <div  class="card   w-72 card-compact bg-base-100 shadow-xl rounded">
+                        <img  class="w-72 h-72 object-cover" src="Images/Neymar_PSG.jpg" alt="Shoes" />
+                        <div class="card-body bg-primary">
+                        <h2 class="name text-2xl text-white text-center">Neymar</h2>
+                        <p class="mx-auto"><span class="mx-3">36 Goals</span> . <span class="mx-3">120 Assist</span></p>
+                        <button class="select-button py-4 btn rounded-none bg-blue-900 focus:bg-blue-800 hover:bg-blue-800">Select</button>
+                        </div>
+                    </div>   
+                    <div  class="card   w-72 card-compact bg-base-100 shadow-xl rounded">
+                        <img  class="w-72 h-72 object-cover" src="Images/Robert Lewandowski.jpg" alt="Shoes" />
+                        <div class="card-body bg-primary">
+                        <h2 class="name text-2xl text-white text-center">Robert Lewandowski</h2>
+                        <p class="mx-auto"><span class="mx-3">36 Goals</span> . <span class="mx-3">120 Assist</span></p>
+                        <button class="select-button py-4 btn rounded-none bg-blue-900 focus:bg-blue-800 hover:bg-blue-800">Select</button>
+                        </div>
+                    </div>   
+                     
+                </div>
+                <!-- Cart -->
+                <div class="lg:w-25">
+                    <!-- Selection Part -->
+                    <div class="select-5 bg-primary  p-5 w-72 my-5">
+                        <h1 class="text-2xl text-orange-600">Selected-V</h1>
+                        <ol class="show-names list-decimal p-5">      
+                        </ol> 
+                    </div> 
+                    <!-- Calculation Part -->
+                    <div class="select-5 bg-primary p-5 w-72 my-5">
+                        <h1 class="text-2xl text-center text-orange-600">Budget</h1>
+                        <div class="flex my-5 justify-center items-center">
+                            <h1 class="w-1/2">Per Player</h1>
+                            <input id="per-player" value="0" class="w-1/2 p-2 border-2 bg-primary focus:outline-none" type="
+                            number">
+                        </div>
+                        <button id="calculate" class="py-4 btn rounded-none bg-blue-900 focus:bg-blue-900 hover:bg-blue-800 w-full">Calculate</button>
+                        <div class="flex my-5 justify-center items-center">
+                            <h1  class="w-1/2">Player Expenses</h1>
+                            <p class="w-1/2">$ <span id="player-expences">0</span> </p>
+                        </div>
+                        <div class="flex my-5 justify-center items-center">
+                            <h1 class="w-1/2">Manager</h1>
+                            <input id="manager-cost" value="0" class="w-1/2 p-2 border-2 bg-primary focus:outline-none" type="
+                            number">
+                        </div>
+                        <div class="flex my-5 justify-center items-center">
+                            <h1 class="w-1/2">Coach</h1>
+                            <input id="coach-cost" value="0" class="w-1/2 p-2 border-2 bg-primary focus:outline-none" type="
+                            number">
+                        </div>
+                        <button id="calculate-total" class="py-4 btn rounded-none bg-blue-900 focus:bg-blue-900 hover:bg-blue-800 w-full ">Calculate Total</button>
+                        <div class="flex my-5 justify-center items-center">
+                            <h1 class="w-1/2">Total</h1>
+                            <p class="w-1/2 text-orange-600">$ <span id="total">0</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer Section -->
     <footer class=" text-center bg-black py-10 ">
-      <h1 class="text-white text-3xl my-3">Soccer league</h1>
+      <h1 class="text-white text-3xl my-3 text-orange-600">Soccer league</h1>
       <p>Copyright @ 2022 All Rights Reserved.</p>
 
       <div class="social-icon my-5 text-white ">
